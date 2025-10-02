@@ -1,10 +1,15 @@
 using AspNetExample.Domain;
 using AspNetExample.Service;
+using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = HttpLoggingFields.All;
+});
 builder.Services.RegisterDomain();
 builder.Services.RegisterService();
 builder.Services.AddControllers();
@@ -19,6 +24,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseHttpLogging();
 
 app.UseHttpsRedirection();
 
