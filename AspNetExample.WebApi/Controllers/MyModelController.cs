@@ -16,6 +16,6 @@ public class MyModelController : ControllerBase
         _service = service;
     }
 
-    [HttpGet("GetModel/{data}")]
-    public IActionResult Get(string data) => Ok(_service.GetModel(data));
+    // [HttpGet("GetModel/{data}")]
+    // public IActionResult Get(string data) => Ok(_service.GetModel(data));
 }

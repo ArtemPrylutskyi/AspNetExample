@@ -8,5 +8,6 @@ public static class DomainExtension
     public static void RegisterDomain(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddTransient<IRepository, Repository>();
+        serviceCollection.AddSingleton<IStorage, Storage>();
     }
 }

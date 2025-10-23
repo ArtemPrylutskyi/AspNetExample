@@ -8,5 +8,6 @@ public static class ServiceExtension
     public static void RegisterService(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddTransient<IService, Services.Service>();
+        serviceCollection.AddTransient<IModelDescriptionProvider, ModelDescriptionProvider>();
     }
 }
