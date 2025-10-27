@@ -1,15 +1,17 @@
 ﻿using AspNetExample.Shared;
 
-namespace AspNetExample.Service;
-
-internal class ModelDescriptionProvider : IModelDescriptionProvider
+namespace AspNetExample.Service
 {
-    private readonly IDateTimeProvider _dateTimeProvider;
-
-    public ModelDescriptionProvider(IDateTimeProvider dateTimeProvider)
+    public class ModelDescriptionProvider : IModelDescriptionProvider
     {
-        _dateTimeProvider = dateTimeProvider;
-    }
+        private readonly IDateTimeProvider _dateTimeProvider;
 
-    public string GetDescription(Guid modelId) => $"Some data for model {modelId}: {_dateTimeProvider.GetDateTime()}";
+        public ModelDescriptionProvider(IDateTimeProvider dateTimeProvider)
+        {
+            _dateTimeProvider = dateTimeProvider;
+        }
+
+     
+        public string GetDescription(Guid modelId) => $"Some data for model {modelId}: ({_dateTimeProvider.GetDateTime().ToString("o")})";
+    }
 }

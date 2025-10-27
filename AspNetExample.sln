@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample.WebApi", "AspNetExample.WebApi\AspNetExample.WebApi.csproj", "{2C3E3B4F-2F03-47CC-B012-DDF216102B46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample.Domain", "AspNetExample.Domain\AspNetExample.Domain.csproj", "{A3058C2E-AC37-4BA0-BE41-8A9CAF3F6521}"
@@ -9,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample.Domain.Test", "AspNetExample.Domain.Test\AspNetExample.Domain.Test.csproj", "{281CABA5-54A1-4C16-8C4D-C9022FDC9A41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample.Shared", "AspNetExample.Shared\AspNetExample.Shared.csproj", "{632BC660-49BB-4403-9200-CBF53D25B480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample.Service.Test", "AspNetExample.Service.Test\AspNetExample.Service.Test.csproj", "{98BAD32C-AD1F-48BF-9500-AA0BD91851B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +41,15 @@ Global
 		{632BC660-49BB-4403-9200-CBF53D25B480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{632BC660-49BB-4403-9200-CBF53D25B480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{632BC660-49BB-4403-9200-CBF53D25B480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98BAD32C-AD1F-48BF-9500-AA0BD91851B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BAD32C-AD1F-48BF-9500-AA0BD91851B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BAD32C-AD1F-48BF-9500-AA0BD91851B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BAD32C-AD1F-48BF-9500-AA0BD91851B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A9B464A-ECE0-48B8-937B-AF55353DA185}
 	EndGlobalSection
 EndGlobal
